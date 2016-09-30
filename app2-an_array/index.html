@@ -3,7 +3,16 @@
 		<link rel="stylesheet" href="style.css"></link>
 	</head>
 	<body ng-controller="arrayController">
-	
+
+Name: <input ng-model='name' type="text" name="name" value="">
+Email: <input ng-model='email' type="text" name="name" value="">
+<button ng-click='addNewPerson(name, email)' type="button" name="button"></button>
+
+		<div ng-repeat='data in myData'>
+		{{data.name}}</br>
+		{{data.email}}</br></br></br>
+
+	</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
